@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css?family=Space%20Grotesk:700|Space%20Grotesk:400");
+
+/* Variables de colores y medidas */
+:root {
+    --m: 4rem;
+    --red: #ff6565;
+    --pink: #ff64f9;
+    --purple: #6b5fff;
+    --blue: #4d8aff;
+    --green: #5bff89;
+    --yellow: #ffee55;
+    --orange: #ff6d1b;
+    --bg-color: #141516;
+    --text-color: #f3f3f3;
+}
+
+/* Estilo general del cuerpo */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+/* Estilo para el encabezado */
+/* Estilo para el encabezado */
+header {
+    width: 100%;
+    background-color: #121213;
+    margin: 20px;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Estilo para el contenedor del menú */
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Título de la máquina expendedora */
+  .menu h1 {
+    color: var(--green);
+    font-size: 2rem;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(91, 255, 137, 0.8);
+    font-family: "Space Grotesk", sans-serif;
+  }
+  
+  /* Estilo para el label y el input de búsqueda */
+  .menu label {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    font-family: "Space Grotesk", sans-serif;
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  #buscar {
+    width: 250px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #222;
+    color: var(--text-color);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    outline: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efecto de escalado y cambio de sombra al enfocar en el input de búsqueda */
+  #buscar:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+  }
+  
+  /* Alineación del buscador a la derecha */
+  header {
+    justify-content: space-between;
+  }
+  
+  
+  
+  /* Estilo para el aside (aún vacío) */
+  aside {
+    margin-left: auto;
+    color: var(--text-color);
+    font-family: "Space Grotesk", sans-serif;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+
+/* Contenedor principal de la máquina expendedora */
+.maquina_venta {
+    background: linear-gradient(#121213, #121213),
+        linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+        linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+    background-origin: border-box;
+    background-clip: padding-box, border-box, border-box;
+    background-size: 200%;
+    animation: animate 2s infinite linear;
+    border: calc(0.08 * var(--m)) solid transparent;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), 0 0 30px rgba(255, 0, 255, 0.3);
+}
+
+/* Título */
+.titulo {
+    color: var(--yellow);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(255, 255, 85, 0.8);
+}
+
+/* Estilo del select y del input */
+select {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.8rem;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #222;
+    color: var(--text-color);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    outline: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="number"] {
+    width: 96%;
+    padding: 1rem;
+    margin: 1rem 1rem 1rem 0rem;
+    border-radius: 0.8rem;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #222;
+    color: var(--text-color);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    outline: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de escalado y sombra al hacer foco */
+select:focus,
+input[type="number"]:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+}
+
+/* Botón */
+button {
+    border: calc(0.08 * var(--m)) solid transparent;
+    position: relative;
+    color: var(--text-color);
+    font-family: "Space Grotesk";
+    font-size: var(--m);
+    border-radius: calc(0.7 * var(--m));
+    padding: calc(0.5 * var(--m)) calc(1 * var(--m));
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background: linear-gradient(#121213, #121213),
+        linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+        linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+    background-origin: border-box;
+    background-clip: padding-box, border-box, border-box;
+    background-size: 200%;
+    animation: animate 2s infinite linear;
+}
+
+button::before {
+    content: "";
+    background: linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+    height: 30%;
+    width: 60%;
+    position: absolute;
+    bottom: -20%;
+    z-index: -5;
+    background-size: 200%;
+    animation: animate 2s infinite linear;
+    filter: blur(calc(0.8 * var(--m)));
+}
+
+/* Área de cambio de dinero */
+.cambio {
+    color: var(--green);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px rgba(91, 255, 137, 0.8);
+}
+
+/* Animación de pulso y cambio de sombras */
+@keyframes animate {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 200%;
+    }
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 1000px) {
+    :root {
+        --m: 2rem;
+    }
+}

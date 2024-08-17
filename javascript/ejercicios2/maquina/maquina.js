@@ -13,8 +13,8 @@ let maquina = [
 // Objeto que contiene las tasas de cambio para convertir a una moneda base (USD)
 let tasasDeCambio = {
     "usd": 1,       // Tasa de cambio para dólares (base)
-    "arg": 0.003,   // Tasa de cambio para pesos argentinos a dólares
-    "brl": 0.20     // Tasa de cambio para reales brasileños a dólares
+    "arg": 1350,   // Tasa de cambio para pesos argentinos a dólares
+    "brl": 500     // Tasa de cambio para reales brasileños a dólares
 };
 
 // Función que maneja la inserción de dinero y la transacción del producto
@@ -40,7 +40,14 @@ function insertMoney() {
     let dineroEnUSD = dineroIngresado / tasasDeCambio[tipoMoneda];
 
     // Verificar si el dinero ingresado es suficiente para comprar el producto
-    if (dineroEnUSD >= productoSeleccionado.precio) {
+    if (dineroEnUSD == productoSeleccionado.precio) {
+        // Calcular el cambio que se debe devolver
+        let cambio = dineroEnUSD - productoSeleccionado.precio;
+        // Convertir el cambio de vuelta a la moneda seleccionada por el usuario
+        let cambioEnMonedaSeleccionada = cambio * tasasDeCambio[tipoMoneda];
+        // Mostrar un mensaje exitoso con el cambio en la moneda seleccionada
+        cambioDiv.textContent = `Puede tomar el producto ${productoSeleccionado.nombre}.`;
+    } else     if (dineroEnUSD >= productoSeleccionado.precio) {
         // Calcular el cambio que se debe devolver
         let cambio = dineroEnUSD - productoSeleccionado.precio;
         // Convertir el cambio de vuelta a la moneda seleccionada por el usuario

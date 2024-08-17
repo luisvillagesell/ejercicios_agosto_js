@@ -5,27 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Máquina Expendedora</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Vincula el archivo de estilos -->
+    <link rel="stylesheet" href="maq.css"> 
 </head>
 
 <body>
+    <header id="barra_menu">
+        <div id="menu" class="menu">
+            <h1>M. E.</h1>
+            <label for="buscar">Buscar🔎</label>
+            <input id="buscar" type="search" placeholder="Buscar producto">
+        </div>
+        <aside>
+
+        </aside>
+
+    </header>
+
     <h1 class="titulo">MÁQUINA EXPENDEDORA</h1>
 
     <div class="maquina_venta">
         <!-- Contenedor para los productos -->
         <div id="lista_producto">
-            <label for="producto">Selcciona el producto</label>
-            <select name="producto" id="producto"></select>
-            <option value="0">Coca Cola - $5.00</option>
-            <option value="0">Pepsi - $4.70</option>
-            <option value="0">Dolly - $4.80</option>
-            <option value="0">Simba - $4.90</option>
-            <option value="0">Fanta - $5.10</option>
-            <option value="0">Sprite - $6.00</option>
-            <option value="0">Paso de los Toros - $7.00</option>
-            <option value="0">Coca Cola Zero - $10.00</option>
+            <label  class="label" for="producto">Selecciona el producto</label>
+            <select name="producto" id="producto">
+                <option value="0">Coca Cola - $5.00</option>
+                <option value="0">Pepsi - $4.70</option>
+                <option value="0">Dolly - $4.80</option>
+                <option value="0">Simba - $4.90</option>
+                <option value="0">Fanta - $5.10</option>
+                <option value="0">Sprite - $6.00</option>
+                <option value="0">Paso de los Toros - $7.00</option>
+                <option value="0">Coca Cola Zero - $10.00</option>
+            </select>
+
             <!-- Selección de tipo de moneda -->
-            <label for="tipo_moneda">Seleccione Moneda:</label>
+            <label class="label" for="tipo_moneda">Seleccione Moneda:</label>
             <select name="tipo_moneda" id="tipo_moneda">
                 <option value="usd">Dólar (USD)</option>
                 <option value="arg">Peso (ARG)</option>

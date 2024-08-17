@@ -1,0 +1,128 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Fondo negro para resaltar los colores neón */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal de la máquina expendedora */
+.maquina_venta {
+    background-color: #111; /* Fondo oscuro */
+    display: flex;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(255, 0, 255, 0.5); /* Sombras neón */
+    width: 90%;
+    max-width: 400px;
+    animation: pulsate 2s infinite alternate; /* Animación de pulso */
+}
+
+/* Título */
+.titulo {
+    color: #00ffcc; /* Color neón */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+.label{
+    color: #00ffcc;
+    align-content: center;
+
+}
+
+/* Estilo del select y del input */
+select, input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    background-color: #222;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Sombras neón */
+    outline: none;
+    transition: transform 0.3s ease; /* Efecto de movimiento suave */
+}
+
+/* Animación de escalado al hacer foco */
+select:focus, input[type="number"]:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff00ff;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.7);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Cambia de color y tamaño al hacer hover */
+button:hover {
+    background-color: #00ffcc;
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
+}
+
+/* Área de cambio de dinero */
+.cambio {
+    color: #00ffcc;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+/* Animación de pulso para el contenedor principal */
+@keyframes pulsate {
+    0% {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(255, 0, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.7), 0 0 40px rgba(255, 0, 255, 0.7);
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 1.5em;
+    }
+    .maquina_venta {
+        padding: 15px;
+    }
+    button {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.2em;
+    }
+    select, input[type="number"], button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+    .maquina_venta {
+        width: 100%;
+        padding: 10px;
+    }
+}
