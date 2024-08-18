@@ -1,0 +1,243 @@
+/* Estilos generales */
+/* Estilos generales */
+body {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+    font-family: 'Lora', serif; /* Aplica la fuente Lora */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.layout {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* O ajusta según tus necesidades */
+}
+
+aside {
+    width: 33%; /* Asegura que ocupe un 33% */
+    padding: 20px;
+    background-color: #222;
+    box-shadow: 0px 5px 15px rgba(255, 0, 255, 0.3);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+main {
+    width: 67%; /* Ocupa el resto del espacio */
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+header {
+    display: flex;
+    padding-bottom: 25px;
+    justify-content: space-around;
+
+}
+
+header h1, 
+.titulo, 
+aside h2, 
+label {
+    font-family: 'Lora', serif;
+    justify-content: space-around;
+    margin: 0;
+    padding: 20px;
+}
+
+header h1 {
+    font-weight: 700; 
+}
+
+.cabecera__buscar__item {
+    display: flex;
+    float: right;
+}
+
+.cabecera_iconos {
+    display: flex;
+    justify-content: space-around;
+    color: #00ffff;
+    font-size: 1.5rem;
+}
+
+.titulo {
+    font-weight: 600;
+    font-size: 40px;
+}
+/*ocupar el 33% deñ lado izquierdo */
+aside {
+    width: 25%;
+}
+
+aside h2 {
+    font-weight: 700;
+}
+
+label {
+    font-weight: 400;
+}
+
+#buscar {
+    font-family: 'Lora', serif;
+}
+
+
+/* Header */
+#barra_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #333;
+    box-shadow: 0px 5px 15px rgba(0, 255, 255, 0.3);
+    border-bottom: 2px solid #00ffff;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#buscar {
+    float: right;
+}
+
+header h1 {
+    color: #00ffff;
+    font-size: 40px;
+    margin: 0;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+header #buscar {
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid #00ffff;
+    background-color: #222;
+    color: #e0e0e0;
+    width: 300px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.3);
+}
+
+/* Aside */
+aside {
+    width: 33%;
+    float: left;
+    padding: 20px;
+    background-color: #222;
+    box-shadow: 0px 5px 15px rgba(255, 0, 255, 0.3);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+aside h2 {
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+}
+
+aside label {
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+    display: block;
+    margin-top: 10px;
+}
+
+aside div {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #333;
+    color: #e0e0e0;
+    box-shadow: 0px 0px 10px rgba(255, 255, 0, 0.3);
+}
+
+/* Contenedor de silos */
+.stock {
+    margin-left: 15px;
+    padding: 20px;
+}
+
+#lista_silos {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 255, 0.3);
+}
+
+#lista_silos label {
+    color: #00ff00;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#lista_silos select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: 2px solid #00ffff;
+    background-color: #222;
+    color: #e0e0e0;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.3);
+}
+
+#lista_silos input{
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: 2px solid #00ffff;
+    background-color: #222;
+    color: #e0e0e0;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.3);
+}
+
+#lista_silos button {
+    background-color: #ff00ff;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+    box-shadow: 0px 5px 15px rgba(255, 0, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+#lista_silos button:hover {
+    background-color: #e000e0;
+    box-shadow: 0px 5px 15px rgba(255, 0, 255, 0.6);
+}
+
+#stockActual {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #444;
+    color: #fff;
+    box-shadow: 0px 5px 15px rgba(255, 255, 0, 0.3);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Títulos */
+.titulo {
+    color: #00ffff;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 0px;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}

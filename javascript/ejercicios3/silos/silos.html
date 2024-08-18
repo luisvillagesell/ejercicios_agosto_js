@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silos</title>
+    <link rel="stylesheet" href="silos.css">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body >
+        <!-- Cabecera -->
+    <header id="cabecera" class="cabecera">
+
+        <nav class="cabecera__container">
+
+            <h1 class="logo__item" href="#">Control de Stock de Silos</h1>
+
+            <div class="cabecera__buscar__item">
+                <form action="">
+                    <input type="search" placeholder="Buscar producto" id="buscar" class="buscar_input">
+                    <label for="buscar" class="buscar_label"></label>
+                </form>
+            </div>
+
+            <div class="cabecera_iconos">
+                <a id="menu_silos" href="#" class="cabecera_silos">
+                    <i class="icono_silo" ></i>
+                    Silo
+                </a>
+                <a id="menu_granos" href="#" class="cabecera__granos">
+                    <i class="icono_grano" >
+                    </i><span>Grano</span>
+                </a>
+                <a id="menu_nosotros" href="#" class="cabecera__nosotros">
+                    <i class="icono_nosotros" ></i>
+                    <span>Nosotros</span>
+                </a>
+                <a id="menu_contacto" href="#" class="cabecera__contacto">
+                    <i class="icono_contacto" >
+
+                    </i><span>Contacto</span>
+                </a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div class="layout">
+        <aside id="barra_lateral">
+            <ul class="lista_menu">
+                <h2>Stock actual de los Silos</h2>
+                <label for="siloMaiz">Silo Maiz</label>
+                <div id="siloMaizActualizado" class="siloMaizActualizado"></div>
+                <label for="siloSoja">Silo Soja</label>
+                <div id="siloSojaActualizado" class="siloSojaActualizado"></div>
+            </ul>
+        </aside>
+        <main>
+            
+    <h1 class="titulo">Ingreso de Granos</h1>
+
+    <div class="stock">
+        <div id="lista_silos">
+            <!-- Selección de tipo de grano -->
+            <label class="grano" for="tipoGrano">Seleccione Tipo de Grano:</label>
+            <select name="tipoGrano" id="tipoGrano">
+                <option value="siloMaiz">Silo de Maíz</option>
+                <option value="siloSoja">Silo de Soja</option>
+            </select>
+            <!-- Entrada de grano -->
+            <input type="number" id="cantidadGrano" placeholder="Ingrese la cantidad en toneladas">
+            <button onclick="agregarGrano()">Aceptar</button>
+
+        </div>
+    </div>
+        </main>
+    </div>
+    
+    <script src="silos.js"></script>
+</body>
+
+</html>
