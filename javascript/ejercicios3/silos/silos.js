@@ -47,5 +47,3 @@ function actualizarStockUI() {
 
 // Llamar a la función para mostrar el stock inicial cuando se carga la página
 window.onload = actualizarStockUI;
-
-
