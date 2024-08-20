@@ -16,11 +16,11 @@ let silos = [{
 // Función para agregar grano al silo
 function agregarGrano() {
     // Obtener tipo de grano desde el HTML (select)
-    let tipoGrano = document.getElementById("tipoGrano").value;
+    let tipoGrano = document.getElementById("tipoGrano").value; //toma el valor desde el html
     // Obtener cantidad de grano desde el HTML (input)
-    let cantidadGrano = parseInt(document.getElementById("cantidadGrano").value);
+    let cantidadGrano = parseInt(document.getElementById("cantidadGrano").value); //toma el valor desde el html
     // Buscar el silo correspondiente
-    let silo = silos.find(s => s.tipoGrano === tipoGrano);
+    let silo = silos.find(s => s.tipoGrano === tipoGrano); //dentro de silos.find() buscamos e igualamos tipo de grano ingresado con del array
 
     // Validar si el silo tiene capacidad suficiente
     if (silo && (silo.ocupado + cantidadGrano) <= silo.capacidad) {
@@ -41,7 +41,7 @@ function agregarGrano() {
 function actualizarStockUI() {
     silos.forEach(silo => {
         let elementoId = silo.tipoGrano === 'siloSoja' ? 'siloSojaActualizado' : 'siloMaizActualizado';
-        document.getElementById(elementoId).innerHTML = `Ocupado: ${silo.ocupado} \n - Capacidad: ${silo.capacidad}\n - Disponible: ${silo.capacidad - silo.ocupado}`;
+        document.getElementById(elementoId).innerHTML = `Ocupado: ${silo.ocupado}<br/> Capacidad: ${silo.capacidad}<br/> Disponible: ${silo.capacidad - silo.ocupado}`;
     });
 }
 
