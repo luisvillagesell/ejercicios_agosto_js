@@ -1,0 +1,248 @@
+/* Estilo general del cuerpo */
+body {
+    background-color: #f3eaea; /* Color de fondo suave */
+    color: #333; /* Texto oscuro para mejor legibilidad */
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Fuente estilo cómic */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url(./img/goku.jpg.gif);
+    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el fondo */
+    background-position: center; /* Centra la imagen en el header */
+    border-bottom: 2px solid #f05d23; /* Borde de color naranja */
+}
+
+/* Estilo del título */
+.titulo {
+    font-size: 44px;
+    background: rgb(102, 152, 194);
+    color: #f1eaea; /* Texto blanco para el título */
+    border-radius: 10px;
+}
+
+/* Estilo del menú de navegación */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+   
+}
+
+nav ul li {
+    margin-right: 20px;
+    background: rgb(102, 152, 194);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li a {
+    color: #f0f0f0; /* Color del texto del enlace */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fa8231; /* Color de texto del enlace al pasar el cursor */
+}
+
+/* Estilo del contenedor del carrito */
+#cart-container {
+    position: relative;
+    background: rgb(15, 51, 80);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#enlace-carrito {
+    color: #fa8231; /* Color del enlace del carrito */
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Estilo de la lista de productos */
+#lista-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo de cada producto */
+.producto {
+    display: grid;
+    background: #fff; /* Fondo blanco para los productos */
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    border: 2px solid #f05d23; /* Borde de color naranja */
+    text-align: center;
+}
+
+/* Estilo de las imágenes de los productos */
+.producto img {
+    grid-column: 1fr;
+    grid-row: 1fr 1fr;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo del título del producto */
+.producto h2 {
+    margin: 15px 0 10px;
+    color: #333; /* Texto oscuro para el título */
+}
+
+/* Estilo de la descripción y precio del producto */
+.producto p {
+    margin: 5px 0;
+    color: #666; /* Texto gris para la descripción y precio */
+}
+
+/* Estilo del botón de agregar al carrito */
+.producto button {
+    background-color: #af3895; /* Fondo del botón */
+    color: #fff; /* Texto blanco */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.producto button:hover {
+    background-color: #dd81c1; /* Fondo del botón al pasar el cursor */
+}
+
+/* Estilo del contenedor del carrito */
+#carrito {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background: #fff; /* Fondo blanco para el carrito */
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    border: 2px solid #f05d23; /* Borde de color naranja */
+    display: none;
+}
+
+/* Estilo del título del carrito */
+#carrito h2 {
+    margin-bottom: 15px;
+    color: #333; /* Texto oscuro para el título */
+}
+
+/* Estilo de cada ítem en el carrito */
+#carrito .item-carrito {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Línea de separación */
+}
+
+#carrito .item-carrito button {
+    background-color: #f05d23; /* Fondo del botón */
+    border: none;
+    color: #fff; /* Texto blanco */
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#carrito .item-carrito button:hover {
+    background-color: #fa8231; /* Fondo del botón al pasar el cursor */
+}
+
+/* Estilo del total en el carrito */
+#carrito .total {
+    text-align: right;
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333; /* Texto oscuro para el total */
+}
+
+/* Estilo del total en el resumen de compra */
+.resumen-compra p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fa8231; /* Color del total */
+}
+
+/* Estilo del botón de finalizar compra */
+.resumen-compra button {
+    background-color: #28a745; /* Fondo verde para el botón */
+    color: #fff; /* Texto blanco */
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    border: none;
+}
+
+.resumen-compra button:hover {
+    background-color: #218838; /* Fondo verde oscuro al pasar el cursor */
+}
+
+/* Modal */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed; /* Fijar en la pantalla */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro con opacidad */
+    z-index: 1000; /* Asegurarse de que esté en la parte superior */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del contenido del modal */
+.modal-content {
+    background-color: #f9f9f9; /* Color de fondo pastel */
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del botón de cerrar */
+.close-button {
+    color: #555;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #e74c3c; /* Rojo pastel */
+    text-decoration: none;
+    outline: none;
+}

@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "nombre": "Spiderman",
+        "precio": 20.00,
+        "imagen": "./img/spiderman.jpeg",
+        "descripcion": "Figura de Spiderman clásico de Marvel."
+    },
+    {
+        "id": 2,
+        "nombre": "Batman",
+        "precio": 25.00,
+        "imagen": "./img/batman.jpeg",
+        "descripcion": "Figura de Batman de DC Comics."
+    },
+    {
+        "id": 3,
+        "nombre": "Iron Man",
+        "precio": 30.00,
+        "imagen": "./img/ironman.jpg",
+        "descripcion": "Figura de Iron Man de Marvel."
+    },
+    {
+        "id": 4,
+        "nombre": "Superman",
+        "precio": 35.00,
+        "imagen": "./img/superman.jpg",
+        "descripcion": "Figura de Superman de DC Comics."
+    },
+    {
+        "id": 5,
+        "nombre": "Thor",
+        "precio": 40.00,
+        "imagen": "./img/thor.jpg",
+        "descripcion": "Figura de Thor de Marvel."
+    },
+    {
+        "id": 6,
+        "nombre": "Wonder Woman",
+        "precio": 45.00,
+        "imagen": "./img/wonderwoman.jpg",
+        "descripcion": "Figura de Wonder Woman de DC Comics."
+    },
+    {
+        "id": 7,
+        "nombre": "Black Panther",
+        "precio": 50.00,
+        "imagen": "./img/blackpanther.webp",
+        "descripcion": "Figura de Black Panther de Marvel."
+    },
+    {
+        "id": 8,
+        "nombre": "Capitan América",
+        "precio": 55.00,
+        "imagen": "./img/capitanamerica.jpg",
+        "descripcion": "Figura de Capitan América de Marvel."
+    },
+    {
+        "id": 9,
+        "nombre": "Hulk",
+        "precio": 60.00,
+        "imagen": "./img/hulk.webp",
+        "descripcion": "Figura de Hulk de Marvel."
+    },
+    {
+        "id": 10,
+        "nombre": "Wolverine",
+        "precio": 65.00,
+        "imagen": "./img/wolverine.jpg",
+        "descripcion": "Figura de Wolverine de Marvel."
+    },
+    {
+        "id": 11,
+        "nombre": "Black Widow",
+        "precio": 70.00,
+        "imagen": "./img/blackwidow.jpg",
+        "descripcion": "Figura de Black Widow de Marvel."
+    },
+    {
+        "id": 12,
+        "nombre": "Harley Quinn",
+        "precio": 75.00,
+        "imagen": "./img/harleyquinn2.webp",
+        "descripcion": "Figura de Harley Quinn de DC Comics."
+    },
+    {
+        "id": 13,
+        "nombre": "Goku",
+        "precio": 80.00,
+        "imagen": "./img/goku.jpg",
+        "descripcion": "Figura de Goku de Dragon Ball Z."
+    }
+]

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Figuras de Comics</title>
+    <link rel="stylesheet" href="carrito.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/reset.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Tienda de Figuras de Comics</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="cart-container">
+            <a href="#" id="enlace-carrito">🛒 (<span id="contador-carrito">0</span>)</a>
+        </div>
+    </header>
+
+    <main id="lista-productos">
+        <!-- productos -->
+    </main>
+
+    <div id="carrito">
+        <h2>Tu Carrito</h2>
+        <div id="items-carrito"></div>
+        <p>Total: $<span id="precio-total">0.00</span></p>
+        <p>Artículos en el carrito: <span id="contador-carrito2">0</span></p>
+        <!--  finalizar compra -->
+        <div class="resumen-compra"></div>
+    </div>
+    <!-- modal -->
+    <div id="modalPersonalizado" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="cerrarModal()">&times;</span>
+            <h2>Compra Finalizada</h2>
+            <p>¡Gracias por su compra!</p>
+            <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="carrito.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Figuras de Comics</p>
+    </footer>
+</body>
+
+</html>
